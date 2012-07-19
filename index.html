@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
+		<title></title>
+		
+		<!-- Kendo UI Mobile styles for all supported platforms -->
+		<link href="http://cdn.kendostatic.com/2012.2.710/styles/kendo.mobile.all.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="assets/css/master.css">
+
+		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+		<!-- Kendo UI JavaScript -->
+		<script src="http://cdn.kendostatic.com/2012.2.710/js/kendo.all.min.js"></script>
+
+		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="assets/js/app.js"></script>
+
+	</head>
+	<body>
+ 		
+ 		<!-- The "layout" defines the common navbar and footer. Views are then swapped
+ 			 out as the content between this common header and footer -->
+
+		<div data-role="layout" data-id="main-layout">
+			<div data-role="header">
+				<div data-role="navbar">
+					<span data-role="view-title"></span>
+				</div>
+			</div>
+			<div data-role="footer">
+				<div data-role="tabstrip">
+					<a data-icon="home" href="#home">Home</a>
+					<a data-icon="settings" href="#settings">Settings</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- These are the "views" that are displayed between the header and the footer
+			 of the layout above. They are specfied as contents of the layout via the
+			 data-layout="main-layout" where "main-layout" is the data-id of the desired
+			 layout -->
+
+		<div data-role="view" data-show="MYAPP.show" data-layout="main-layout" id="home" data-title="Home">
+			<p>Home</p>
+		</div>
+
+		<div data-role="view" data-layout="main-layout" id="settings" data-title="Settings">
+			<p>Settings</p>
+		</div>	
+
+	</body>
+</html>

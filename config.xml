@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.you.www"
+	version 	= "1.0.0">
+
+	<name>Your Mind Blowing App</name>
+
+	<description>
+		A brilliant mobile application written by you and now available on every platform thanks to Kendo UI Mobile and PhoneGap Build.
+	</description>
+
+	<author href="build.phonegap.com"
+		email="">
+		Mr. Mobile Madness
+	</author>
+
+	<icon src="icon.png" gap:role="default" />
+
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+	<preference name="orientation" value="portrait" />
+</widget>
